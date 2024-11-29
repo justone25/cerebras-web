@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerebras Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <h1 class="text-3xl font-bold text-center mb-8">Cerebras Chat</h1>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <div id="chat-container" class="h-[500px] overflow-y-auto mb-4 space-y-4">
+                <!-- Chat messages will be inserted here -->
+            </div>
+            
+            <div class="flex space-x-2">
+                <input type="text" 
+                       id="user-input" 
+                       class="flex-1 p-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                       placeholder="Type your message here...">
+                <button id="send-button" 
+                        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
